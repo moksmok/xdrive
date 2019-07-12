@@ -1,0 +1,86 @@
+header {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    
+
+   & .navbar {
+
+
+    &__logo {
+
+        & img {
+            width: 80%;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+        font-size: 2rem;
+        list-style: none;
+        
+
+        & li {
+            
+
+            & a {
+                text-decoration: none;
+                color: black;
+                
+            }
+        }
+    }
+   }
+}
+
+
+.section-hero {
+    position: relative;
+    height: 85vh;
+    width: 100%;
+    background-image: url(/img/hero-photo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+
+    & .overlay {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 100%;
+        width: 100%;
+    }
+
+    & h1 {
+        position: relative;
+        font-size: 7rem;
+        font-weight: 700;
+        width: 50%;
+        height: 50%;
+        color: white;
+        text-align: center;
+        letter-spacing: 2px;
+        top: 10%;
+        z-index: 3;
+        
+    }
+
+    & img {
+        z-index: 1;
+        position: absolute;
+        left: 50px;
+        bottom: 0;
+        width: 45vw;
+    }
+}

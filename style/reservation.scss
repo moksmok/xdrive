@@ -1,0 +1,43 @@
+.section-reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.heading {
+    font-size: 6rem;
+    color: $blue-color;
+    text-align: center;
+    margin: 5rem auto;
+
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    
+
+    & label {
+        color: #6a6a6a;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
+input {
+    transform: skew(-20deg);
+    border: 2px solid $blue-color;
+    height: 4rem;
+    width: 35rem;
+}

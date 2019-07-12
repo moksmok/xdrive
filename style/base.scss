@@ -1,0 +1,44 @@
+$blue-color: #385EF6;
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+
+body, html{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 65.5%; // 1rem = 10px
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+
+ 
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    width: 100vw;
+    
+  }
+
+
