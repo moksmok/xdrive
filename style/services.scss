@@ -1,0 +1,305 @@
+.section-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    & p {
+        font-size: 1.6rem;
+    }
+}
+
+
+
+.section-services__heading {
+        
+      @include titleSection;
+}
+
+.section-wrapper {
+    display: flex;
+
+
+    &__photo {
+        flex: 1;
+        padding: 2rem;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+
+    &__text {
+        flex: 1;
+        padding: 4rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        & ul {
+
+            padding-left: 5rem;
+
+            & p {
+                font-size: 1.6rem;
+                margin-left: -5rem;
+                margin-bottom: 2.5rem;
+                text-align: center;
+            }
+
+            & li {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+
+
+.longterm-rent {
+
+    & p {
+        text-align: center;
+        line-height: 2.2rem;
+    }
+}
+
+
+.text-wedding {
+    text-align: center;
+    line-height: 2.2rem;
+    
+}
+
+
+.join-us-rent {
+    text-align: center;
+
+    & p {
+        line-height: 2.2rem;
+    }
+}
+
+
+
+//          SWIPER 
+
+
+
+.cars {
+    width: 90%;
+    height: auto;
+}
+
+// .swiper-slide {
+//     background-position: center;
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     width: 300px;
+//     height: 300px;
+// }
+
+
+.swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+
+
+
+
+    & img {
+        
+        width: 100%;
+        height: auto;
+        
+    }
+  }
+
+  .car-card {
+      position: relative;
+  }
+
+  .car-name {
+      position: absolute;
+      width: 100%;
+      height: 5rem;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & p {
+          font-size: 1.8rem;
+          font-weight: 600;
+          text-transform: uppercase;
+      }
+  }
+
+
+
+
+
+  //            REVIEWS
+
+
+  .reviews {
+      width: 100%;
+      margin: 5rem 0;
+  }
+
+  .reviews-container {
+      display: flex;
+      
+      justify-content: space-evenly;
+      width: 100%;
+      padding: 1rem;
+
+  }
+
+
+  .review-card {
+    background-image: linear-gradient(to left bottom, #385ef6, #344ee1, #2e3ecc, #282eb8, #211da4);
+      width: 40rem;
+      height: 15rem;
+      padding: 0 2rem;
+      border-radius: 5px;
+      margin: 1rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      &__review {
+          color: #fff;
+          text-align: center;
+          
+          & p {
+              font-size: 1.7rem;
+              
+          }
+      }
+
+      &__name {
+          text-align: right;
+          color: #fff;
+
+          & h2 {
+            font-size: 2.2rem;
+          }
+      }
+  }
+
+
+
+
+
+  //            NEWSLETTER  
+
+  .newsletter {
+      width: 100%;
+      height: 40vh;
+      background-color: $blue-color;
+      
+  }
+
+  .newsletter-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5rem 0;
+
+      height: 100%;
+
+      &__heading {
+          color: #fff;
+
+          & h2 {
+            font-size: 5rem;
+            text-align: center;
+          }
+          
+      }
+
+      &__text {
+          color: #fff;
+          
+          & p {
+            font-size: 2.4rem;
+            text-align: center;
+          }
+      }
+
+      &__sign {
+          display: flex;
+          justify-content: space-between;
+          width: 50%;
+
+
+
+          & input {
+              background: transparent;
+              border: none;
+              border-bottom: 2px solid #fff;
+              width: 20rem;
+              color: #fff;
+              font-size: 1.4rem;
+
+              &:focus {
+                outline: none; // removes blue outline on focus
+                
+                box-shadow: none; 
+              }
+
+              &::placeholder {
+                  color: #fff;
+                  text-align: center;
+                  font-size: 1.4rem;
+              }
+          }
+
+          & .button-sign {
+            height: 4rem;
+            width: 20rem;
+            background-color: #fff;
+            
+            transform: skew(-20deg);
+        
+            & a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 2.5rem;
+                color: $blue-color;
+                font-weight: 700;
+                letter-spacing: 2px;
+                
+                & p {
+                    transform: skew(20deg);
+                }
+            }
+        }
+          
+      }
+  }

@@ -1,0 +1,42 @@
+.footer {
+    background-color: #2B2B2B;
+    color: #fff;
+}
+
+.footer-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    
+
+    &__info {
+        font-size: 1.6rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & p {
+            margin: 1rem;
+        }
+
+    }
+
+    &__list {
+        font-size: 1.6rem;
+        
+        & ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            
+            & li {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}

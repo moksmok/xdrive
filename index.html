@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" integrity="sha256-XwfUNXGiAjWyUGBhyXKdkRedMrizx1Ejqo/NReYNdUE=" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style/main.scss">
     <title>XDRIVE</title>
 </head>
 <body>
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar row">
                 <div class="navbar__logo">
                         <img src="./img/logo.svg" alt="">
                     </div>
@@ -28,7 +29,7 @@
     <section class="section-hero">
         <div class="overlay"></div>
         <h1>Wypożyczalnia sportowych </br> aut online</h1>
-        <img src="./img/pattern-svg1.svg" alt="">
+        <img src="./img/pattern.svg" alt="">
     </section>
 
     <section class="section-reservation">
@@ -36,43 +37,240 @@
                 <h1 class="heading">Zarezerwuj samochód online</h1>
 
                 <div class="form">
-                    <div class="input input-place">
-                            <label for="place">Miejsce podstawienia</label>
-                            <input type="text" id="place" name="place" placeholder="np. Warszawa, Kwiatowa 15">
-                    </div>
+                    <div class="form__wrapper">
+                        <div class="input input-place">
+                                <label for="place">Miejsce podstawienia</label>
+                                <input type="text" id="place" name="place" placeholder="np. Warszawa, Kwiatowa 15">
+                        </div>
 
-                    <div class="input input-day">
-                            <label for="place">Data i godzina</label>
-                            <input type="text" id="place" name="place" placeholder="np. Warszawa, Kwiatowa 15">
-                    </div>
+                        <div class="input input-day">
+                                <label for="place">Data i godzina</label>
+                                <input type="text" id="place" name="place" placeholder="np. Warszawa, Kwiatowa 15">
+                        </div>
 
-                    <div class="input input-model">
-                            <label for="place">Model samochodu</label>
-                            <input type="text" id="place" name="place" placeholder="np. Warszawa, Kwiatowa 15">
-                    </div>
+                        <div class="input input-model">
+                                <label for="place">Model samochodu</label>
+                                        <select name="cars" id="">
+                                                <option value="Focus RS">Focus RS</option>
+                                                <option value="Ford Mustang">Ford Mustang</option>
+                                        </select>
+                                
+                        </div>
 
-                    <div class="input input-return">
-                            <label for="place">Miejsce zwrotu</label>
-                            <input type="text" id="place" name="place" placeholder="np. Warszawa, Kwiatowa 15">
-                    </div>
+                        <div class="input input-return">
+                                <label for="place">Miejsce zwrotu</label>
+                                <input type="text" id="place" name="place" placeholder="np. Warszawa, Kwiatowa 15">
+                        </div>
 
-                    <div class="input input-day">
-                            <label for="place">Data i godzina</label>
-                            <input type="text" id="place" name="place" placeholder="np. Warszawa, Kwiatowa 15">
-                    </div>
+                        <div class="input input-day-return">
+                                <label for="place">Data i godzina</label>
+                                <input type="text" id="place" name="place" placeholder="np. Warszawa, Kwiatowa 15">
+                        </div>
 
-                    <div class="input input-mail">
-                            <label for="place">Adres e-mail</label>
-                            <input type="text" id="place" name="place" placeholder="np. Warszawa, Kwiatowa 15">
-                    </div>
+                        <div class="input input-mail">
+                                <label for="place">Adres e-mail</label>
+                                <input type="text" id="place" name="place" placeholder="np. Warszawa, Kwiatowa 15">
+                        </div>
+                </div>
                    
                 </div>
+
+                <button class="button-reservation">
+                        <a href="#">
+                                <p>Rezerwuj</p>
+                        </a>
+                </button>
+
+                <img class="decoration" src="./img/decoration-right.svg" alt="">
             
         </section>
 
 
+        <section class="section-services">
+                <h1 class="section-services__heading">Wynajem Krótkoterminowy</h1>
+        
+                <div class="section-wrapper row">
+                        <div class="section-wrapper__photo">
+                                <img src="./img/car1.jpg" alt="">
+                        </div>
+                
+                        <div class="section-wrapper__text">
+                                <p>Wynajem krótkoterminowy to usługa wypożyczenia samochodu na okres od 2 godzin do 30 dni. Szczegółowy opis
+                                        dotyczący długości najmu, cen i limitu kilometrów znajdziecie Państwo w opisie każdego auta w naszej
+                                        wypożyczalni.
+                                </p>
+
+                                
+                                        
+                                        <ul>
+                                                <p>Decydując się na krótkoterminowy wynajem naszych aut, możesz liczyć na: </p>
+
+                                                <li>niewielką liczbę podpisywanych dokumentów</li>
+                                                <li>uczciwą obsługę i klarowne warunki najmu samochodu</li>
+                                                <li>podstawienie samochodu w dowolne miejsce na terenie Polski</li>
+                                                <li>zwrotu z dowolnego miejsca na terenie Polski</li>
+                                                <li>brak limitu kilometrów przy wybranych opcjach</li>
+                                                <li>brak kaucji powyżej 21 roku życia</li>
+                                        </ul>
+                                
+                                
+                        </div>
+                </div>
+
+                <div class="longterm-rent row">
+                        <h1 class="section-services__heading">Wynajem Długoterminowy</h1>
+
+                                <p>Oferta najmu długoterminowego dostosowywana jest indywidualnie do potrzeb klienta.<br> Zapraszam do kontaktu w celu ustalenia szczegółów.</p>
+
+                </div>
 
 
+                <div class="wedding-rent row">
+                <h1 class="section-services__heading">Samochód do ślubu</h1>
+                        <p class="text-wedding">Ślub to wyjątkowy dzień, jeden z tych które pamiętamy na całe życie! <br>
+                                Wyjątkowym i bardzo ważnym elementem oprawy ceremonii jest odpowiedni samochód do ślubu!<br>
+                                Mamy w swojej ofercie coś co spełni wasze oczekiwania!<br>
+                                
+                                Proponujemy auto do ślubu z szoferem lub wynajem indywidualny. <br>
+                                Nasze samochody możemy udekorować w taki sposób, aby estetycznie wpisywały się w założenia młodej pary. <br>
+                                Wynajmując samochód na ślub możecie być przekonani, że jest on w 100% sprawny i nie zawiedzie w tak ważnym dla Was dniu i uroczystości.</p>
+
+                        </div>
+
+                <div class="join-us-rent row">
+                        <h1 class="section-services__heading">Dołącz do nas <br>Wstaw auto do wypożyczalni</h1>
+                        <p>Wstaw swoje auto do naszej wypożyczalni i zacznij na nim zarabiać!<br> 
+                                Dodatkowym atutem współpracy z nami będzie możliwość korzystania z pozostałych aut z naszej wypożyczalni.<br>
+                                
+                                Dołącz do nas! Zapraszamy do kontaktu.</p>
+                </div>
+
+                <div class="cars">
+                        <h1 class="section-services__heading">Dostępne samochody</h1>
+
+                        <div class="swiper-container">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                            <a href="#">
+                                            <div class="car-card">
+                                                <span class="car-name">
+                                                        <p>Audi A7</p>
+                                                        </span>
+                                                <img src="./img/audi-a7.jpg" alt="">
+                                                </div>
+                                        </a>
+
+                                        </div>
+                                      <div class="swiper-slide">
+                                                <a href="#">
+                                            <div class="car-card">
+                                                <span class="car-name">
+                                                        <p>BMW i8</p>
+                                                        </span>
+                                                <img src="./img/bmw-i8.jpg" alt="">
+                                                </div>
+                                                </a>
+                                        </div>
+                                          <div class="swiper-slide">
+                                                        <a href="#">
+                                            <div class="car-card">
+                                                <span class="car-name">
+                                                        <p>Audi A7</p>
+                                                        </span>
+                                                <img src="./img/audi-a7.jpg" alt="">
+                                                </div>
+                                                        </a>
+                                        </div>
+                                    
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            
+                       
+                            </div>
+                </div>
+
+
+                <div class="reviews row">
+                        <h1 class="section-services__heading">Opinie</h1>
+
+                        <div class="reviews-container">
+                                <div class="review-card">
+                                        <div class="review-card__review">
+                                                <p>Najlepsza wypożyczalnia aut sportowych w okolicy!</p>
+                                        </div>
+                                        <div class="review-card__name">
+                                                <h2>Krzysztof</h2>
+                                        </div>
+                                        
+                                </div>
+
+                                <div class="review-card">
+                                                <div class="review-card__review">
+                                                        <p>Wypożyczenie raz auta w DRIVE Warsaw podsyci tylko apetyt!</p>
+                                                </div>
+                                                <div class="review-card__name">
+                                                        <h2>Mariusz</h2>
+                                                </div>
+                                                
+                                        </div>
+
+                                        
+                        </div>
+
+                </div>
+
+
+                <div class="newsletter">
+                        <div class="newsletter-wrapper row">
+                                <div class="newsletter-wrapper__heading"><h2>Każda pora jest dobra</h2></div>
+                                <div class="newsletter-wrapper__text"><p>zapisz się do naszego newslettera i <br> otrzymaj 10% zniżki na pierwszy przejazd</p></div>
+                                <div class="newsletter-wrapper__sign">
+                                        <input type="email" id="newsletter-mail" placeholder="wpisz swój e-mail">
+
+                                        <button class="button-sign">
+                                                        <a href="#">
+                                                                <p>Zapisz się</p>
+                                                        </a>
+                                                </button>
+                                </div>
+                        </div>
+                </div>
+
+                </section>
+
+
+                <footer class="footer">
+                        <div class="footer-wrapper row">
+                                <div class="footer-wrapper__info">
+                                        <p>DRIVE WARSAW - wynajem aut sportowych</p>
+                                        <p>+48 664 787 936<br>kontakt@drivewarsaw.pl</p>
+                                        <p>Dostępność 24h / 7 dni w tygodniu</p>
+                                </div>
+
+                                <div class="footer-wrapper__list">
+                                        <ul>
+                                                <a href="#"><li>strona główna</li></a>
+                                                <a href="#"><li>rezerwacja</li></a>
+                                                <a href="#"><li>usługi</li></a>
+                                                <a href="#"><li>kontakt</li></a>
+                                                <a href="#"><li>regulamin</li></a>
+                                                
+                                        </ul>
+                                </div>
+                        </div>
+                </footer>
+
+
+
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js" integrity="sha256-uckMYBvIGtce2L5Vf/mwld5arpR5JuhAEeJyjPZSUKY=" crossorigin="anonymous"></script>
     <script src="./src/index.js"></script>
 </body>
 </html>

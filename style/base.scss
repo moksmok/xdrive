@@ -16,6 +16,7 @@ $blue-color: #385EF6;
 
 
 body, html{
+    position: relative;
     margin:0;
     padding:0;
     overflow-x: hidden;
@@ -41,4 +42,10 @@ body {
     
   }
 
+
+
+.row {
+    max-width: 1180px;
+    margin: 0 auto;
+}
 

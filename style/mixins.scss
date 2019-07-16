@@ -1,0 +1,27 @@
+@mixin titleSection {
+    position: relative;
+    font-size: 5rem;
+    color: $blue-color;
+    text-align: center;
+    margin: 5rem auto;
+    text-transform: uppercase;
+    text-shadow: 10px 5px 15px rgba(0,0,0,0.2);
+
+
+    &::after {
+        position: absolute;
+        content: '';
+        height: 3px;
+        background-color: $blue-color;
+       
+
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: -2rem;
+        width: 20rem;
+        
+        text-align: center;
+        
+    }
+}
